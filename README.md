@@ -10,7 +10,7 @@
     <li> number</li>
     <li> string</li>
     <li> symbol (ES2015)</li>
-    <li> unll</li>
+    <li> null</li>
     <li> undefined</li>
     </ol>
 - literal 값으로 Primitive 타입의 서브 타입을 나타낼 수 있다.
