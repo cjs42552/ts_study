@@ -126,14 +126,14 @@ let obj = {
 console.log(obj[sym]); //"value"
 ```
 
-## unll & undefined
-- TypeScript 에서, undefined 와 null은 실제로 각각 undefined 및 unll 이라는 타입을 가집니다.
+## null & undefined
+- TypeScript 에서, undefined 와 null은 실제로 각각 undefined 및 null 이라는 타입을 가집니다.
 - void 와 마찬가지로, 그 자체로는 그다지 유용하지 않습니다.
 - 둘다 소문자만 존재
 ```ts
 // 이 변수들에 할당할 수 있는 것들은 거의 없다.
 let u : undefined = undefined;
-let n : unll = null;
+let n : null = null;
 ```
 ### undefined & null are subtypes of all other types.
 - 설정을 하지 않으면 그렇다
@@ -147,7 +147,7 @@ let age : number = undefined;
 // Type 'null' is not assingnable to type 'string'.
 let name : string = null; // (x)
 
-// null => unll || void, undefined => undefinde || void
+// null => null || void, undefined => undefinde || void
 // Type 'null' is not assingnable to type 'undefined'.
 let u : undefined = null; // (x)
 
@@ -202,7 +202,7 @@ obj = 100n; //Error
 
 obj = Symbol(); //Error
 
-obj = unll; //Error
+obj = null; //Error
 
 obj = undefined; //Error
 
